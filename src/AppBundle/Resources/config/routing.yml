@@ -1,0 +1,12 @@
+app:
+  path: /
+  defaults: {_controller: AppBundle:Default:index}
+
+sports:
+  path: /sport
+  defaults: {_controller: AppBundle:Default:getSports}
+sportshow:
+  path: /sport/{id}
+  defaults: {_controller: AppBundle:Default:showSport}
+  requirements:
+    id: '\d+'

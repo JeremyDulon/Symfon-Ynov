@@ -26,6 +26,9 @@
 !bin/console
 !bin/symfony_requirements
 
+# Vendors
+/vendor/
+
 # Assets and user uploads
 /web/bundles/
 /web/uploads/
@@ -33,6 +36,7 @@
 # PHPUnit
 /app/phpunit.xml
 /phpunit.xml
+phpunit.xml.dist
 
 # Build data
 /build/

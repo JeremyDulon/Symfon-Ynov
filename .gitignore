@@ -39,3 +39,21 @@
 
 # Backup entities generated with doctrine:generate:entities command
 **/Entity/*~
+
+
+# Created by https://www.gitignore.io/api/phpstorm
+
+### PhpStorm ###
+
+# User-specific stuff:
+.idea/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

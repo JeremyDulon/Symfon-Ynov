@@ -57,3 +57,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Oublie de Jeremy 
+/vendor
+phpunit.xml.dist

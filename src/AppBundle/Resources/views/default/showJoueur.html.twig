@@ -1,0 +1,11 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %}
+    {{ joueur.prenom }} {{ joueur.nom }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ joueur.nom }} {{ joueur.prenom }}</h1>
+    sport : {{ joueur.club.sport.libelle }}<br/>
+    club : {{ joueur.club.nom }}
+{% endblock %}

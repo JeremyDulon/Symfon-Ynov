@@ -125,4 +125,3 @@ class Joueur
         return $this->club;
     }
 }
-

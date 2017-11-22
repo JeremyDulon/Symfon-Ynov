@@ -155,5 +155,35 @@ class Club
     {
         return $this->joueurs;
     }
-}
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->joueurs = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
+    /**
+     * Add joueur
+     *
+     * @param \AppBundle\Entity\Joueur $joueur
+     *
+     * @return Club
+     */
+    public function addJoueur(\AppBundle\Entity\Joueur $joueur)
+    {
+        $this->joueurs[] = $joueur;
+
+        return $this;
+    }
+
+    /**
+     * Remove joueur
+     *
+     * @param \AppBundle\Entity\Joueur $joueur
+     */
+    public function removeJoueur(\AppBundle\Entity\Joueur $joueur)
+    {
+        $this->joueurs->removeElement($joueur);
+    }
+}

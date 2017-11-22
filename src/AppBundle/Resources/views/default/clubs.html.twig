@@ -1,0 +1,11 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %}
+    liste des clubs
+{% endblock %}
+
+{% block body %}
+    {% for club in clubs %}
+        [{{ club.id }}] {{ club.nom }}<br/>
+    {% endfor %}
+{% endblock %}

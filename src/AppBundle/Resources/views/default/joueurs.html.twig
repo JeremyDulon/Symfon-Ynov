@@ -1,0 +1,11 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %}
+liste des joueurs
+{% endblock %}
+
+{% block body %}
+    {% for joueur in joueurs %}
+        [{{ joueur.id }}] {{ joueur.nom }} {{ joueur.prenom }}<br/>
+    {% endfor %}
+{% endblock %}

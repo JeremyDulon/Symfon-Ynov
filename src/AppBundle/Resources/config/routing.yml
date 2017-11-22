@@ -3,10 +3,28 @@ app:
   defaults: {_controller: AppBundle:Default:index}
 
 sports:
-  path: /sport
+  path: /sports
   defaults: {_controller: AppBundle:Default:getSports}
 sportshow:
   path: /sport/{id}
   defaults: {_controller: AppBundle:Default:showSport}
+  requirements:
+    id: '\d+'
+
+joueurs:
+  path: /joueurs
+  defaults: {_controller: AppBundle:Default:getJoueurs}
+joueurshow:
+  path: /joueur/{id}
+  defaults: {_controller: AppBundle:Default:showJoueur}
+  requirements:
+    id: '\d+'
+
+clubs:
+  path: /clubs
+  defaults: {_controller: AppBundle:Default:getClubs}
+clubshow:
+  path: /club/{id}
+  defaults: {_controller: AppBundle:Default:showClub}
   requirements:
     id: '\d+'
